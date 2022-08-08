@@ -26,6 +26,14 @@ A new type of DHT node designed to accelerate the Content Resolution & Content P
 
 [**Read the RFC**](https://docs.google.com/document/d/1yA2fY5c0WIv3LCtJCPVesHzvCWt14OPv7QlHdV3ghgU) - [**Kanban**](https://app.zenhub.com/workspaces/hydra-booster-5e64ef0d1fa19e698b659cec/board?repos=245123455)
 
+## MyNotes
+To solve problems with UDP buffer:
+`sudo sysctl -w net.core.rmem_max=2500000`
+
+When replacing an official package with our own, GO complains about checksums. To clean everything up automatically, use:
+`go mod tidy`
+
+
 ## Install
 
 ```
